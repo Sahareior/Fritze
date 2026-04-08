@@ -1,34 +1,34 @@
 export default function ReusableCardHome({ item }) {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg shadow-t-md border-t-2 border-t-[#F97415] transition">
       
       {/* Image */}
-      <div className="relative">
+      <div className="relative px-3 pt-3 ">
         <img
-          src={item.image}
-          alt={item.title}
-          className="h-44 w-full object-cover"
+          src={item?.image}
+          alt={item?.title}
+          className="h-60 rounded-xl w-full object-cover"
         />
 
         {/* Price Badge */}
-        <span className="absolute top-3 right-3 bg-orange-500 text-white text-xs px-3 py-1 rounded-full">
-          {item.price}
+        <span className="absolute top-7 right-7 lora  bg-[#F97415] text-white text-[18px] px-3 py-1 rounded-full">
+          {item?.price}
         </span>
       </div>
 
       {/* Content */}
       <div className="p-5">
         <h3 className="font-serif text-lg text-gray-800">
-          {item.title}
+          {item?.title}
         </h3>
 
         <p className="text-sm text-gray-500 mt-2">
-          {item.desc}
+          {item?.desc}
         </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-3">
-          {item.tags.map((tag, i) => (
+          {item?.tags?.map((tag, i) => (
             <span
               key={i}
               className="text-xs bg-gray-100 px-2 py-1 rounded-full text-gray-600"

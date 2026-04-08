@@ -33,8 +33,8 @@ const experiences = [
 
 function Experience() {
   return (
-    <section className="bg-[#f3f3f3] py-14 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-14 ">
+      <div className="max-w-8xl md:px-16 mx-auto">
         
         {/* Header */}
 <ReusableTitle title="FEATURED EXPERIENCES" description="Choose your Preference. Choose your story." />

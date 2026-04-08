@@ -11,7 +11,7 @@ const features = [
 function Hero() {
   return (
   <section>
-      <div className=" px-20 py-10">
+      <div className=" md:px-20 py-10">
       <div className="w-full mx-auto">
         {/* Top Content */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -63,11 +63,11 @@ function Hero() {
      
       </div>
     </div>
-       <div className="mt-10 bg-[#F2F2F2] rounded-md  px-6 py-4 flex flex-wrap justify-between gap-4">
+       <div className="mt-10 bg-[#F2F2F2] rounded-md  px-18 py-4 flex flex-wrap justify-between gap-4">
           {features.map((item, index) => (
             <div key={index} className="flex mx-11 items-center gap-2 text-gray-600 text-sm">
               <span className="text-orange-500">{item.icon}</span>
-              <span>{item.text}</span>
+              <span className="lora text-[18px]">{item.text}</span>
             </div>
           ))}
         </div>
