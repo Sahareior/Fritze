@@ -24,7 +24,8 @@ const PressCTA = () => {
           <button className="px-6 py-3 rounded-xl border border-[#2A3C48] text-gray-700 hover:bg-gray-100 transition">
             Schedule Press Tour
           </button>
-
+  
+  
           {/* Primary Button */}
           <button className="px-6 py-3 rounded-xl bg-orange-500 text-white hover:bg-orange-600 transition">
             Explore Our Tours
