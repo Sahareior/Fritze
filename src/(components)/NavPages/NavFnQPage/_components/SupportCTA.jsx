@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SupportCTA = () => {
+    const navigate = useNavigate()
+
   return (
     <section className="">
       
@@ -25,8 +28,8 @@ const SupportCTA = () => {
           </button>
 
           {/* Primary */}
-          <button className="bg-orange-500 raleway text-[16px] font-semibold text-white px-7 py-3 rounded-md text-sm hover:bg-orange-600 transition">
-            Book a Tour
+          <button onClick={()=> navigate('/private-tours')} className="bg-orange-500 raleway text-[16px] font-semibold text-white px-7 py-3 rounded-md text-sm hover:bg-orange-600 transition">
+            Book a Private Tour
           </button>
 
         </div>

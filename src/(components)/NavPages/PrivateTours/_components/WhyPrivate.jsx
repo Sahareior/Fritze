@@ -22,7 +22,8 @@ const WhyPrivate = () => {
 
 ];
   return (
-    <div className='bg-[#F8F9FA] pb-16'>
+<div className=' bg-[#F8F9FA]'>
+        <div className='mx-20 pb-16'>
         <ReusableTitle
         title="Why Choose Private Tours?"
         />
@@ -32,6 +33,7 @@ const WhyPrivate = () => {
         ))}
       </div>
     </div>
+</div>
   )
 }
 

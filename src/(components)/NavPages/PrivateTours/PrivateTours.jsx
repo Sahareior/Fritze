@@ -6,7 +6,7 @@ import WhyPrivate from './_components/WhyPrivate'
 
 const PrivateTours = () => {
   return (
-    <div className='mx-20'>
+    <div className=''>
         <PrivateTourBanner />
         <ChooseTour />
         <PrivateBookingForm />

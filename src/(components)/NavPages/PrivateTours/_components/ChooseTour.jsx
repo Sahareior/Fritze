@@ -35,7 +35,7 @@ const tours = [
 
 const ChooseTour = () => {
   return (
-    <section className="">
+    <section className="mx-20">
       
       <div className="max-w-8xl mx-auto px-6 py-6">
         
@@ -50,7 +50,7 @@ const ChooseTour = () => {
           {tours.map((tour, index) => (
             <div
               key={index}
-              className="bg-white border rounded-xl p-6 hover:shadow-md transition"
+              className="bg-white border-2 border-[#E5E5E5] rounded-xl p-6 hover:shadow-md transition"
             >
               
               {/* Title */}
@@ -74,7 +74,7 @@ const ChooseTour = () => {
               </div>
 
               {/* Divider */}
-              <div className="border-t mb-4"></div>
+              <div className="border-t border-[#E5E5E5] mb-4"></div>
 
               {/* Price */}
               <p className="text-orange-500 font-semibold raleway text-[16px]">

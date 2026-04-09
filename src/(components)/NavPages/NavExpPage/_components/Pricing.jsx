@@ -68,16 +68,16 @@ const Pricing = () => {
               )}
 
               {/* Title */}
-              <h4 className="font-serif text-lg mb-2">
+              <h4 className="lora text-[28px] font-semibold mb-2">
                 {plan.name}
               </h4>
 
               {/* Price */}
               <div className="flex items-end gap-1 mb-4">
-                <span className="text-2xl font-bold text-orange-500">
+                <span className="text-[48px] lora font-bold text-orange-500">
                   {plan.price}
                 </span>
-                <span className="text-xs opacity-70">/ person</span>
+                <span className="text-sm opacity-70">/ person</span>
               </div>
 
               {/* Features */}

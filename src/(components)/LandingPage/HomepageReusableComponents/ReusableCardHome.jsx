@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 export default function ReusableCardHome({ item }) {
+
+  const navigate = useNavigate();
+
+  const handleViewTour = () => {
+    navigate(`/exprience/tour/${item?.id}`);
+  };
+
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg shadow-t-md border-t-2 border-t-[#F97415] transition">
       
@@ -40,7 +49,7 @@ export default function ReusableCardHome({ item }) {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-5">
-          <button className="flex-1 border border-gray-300 py-2 rounded-md text-sm hover:bg-gray-100 transition">
+          <button onClick={handleViewTour} className="flex-1 border border-gray-300 py-2 rounded-md text-sm hover:bg-gray-100 transition">
             View Tour
           </button>
           <button className="flex-1 bg-[#5c614b] text-white py-2 rounded-md text-sm hover:opacity-90 transition">
