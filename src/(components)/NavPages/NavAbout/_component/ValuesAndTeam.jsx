@@ -47,20 +47,20 @@ const ValuesAndTeam = () => {
   return (
     <section className="bg-[#f3f3f3] py-16">
       
-      <div className="max-w-8xl mx-auto px-20">
+      <div className="max-w-8xl mx-auto px-4 md:px-20">
         
         {/* ================= VALUES ================= */}
         <div className="text-center mb-12">
          <ReusableTitle title="Our Values" />
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 mt-4 md:mt-0">
             {values.map((item, index) => {
               const Icon = item.icon;
 
               return (
                 <div
                   key={index}
-                  className=" rounded-xl px-6 py-12 text-left hover:shadow-md transition"
+                  className=" rounded-xl px-5 py-8 md:px-6 md:py-12 text-left hover:shadow-md transition"
                   style={{
                     background: "linear-gradient(135deg, #EEF2FF 0%, #FAF5FF 100%)",
 
@@ -73,12 +73,12 @@ const ValuesAndTeam = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-bold lora text-[24px]  text-gray-800 mb-2">
+                  <h3 className="font-bold lora text-[22px] md:text-[24px]  text-gray-800 mb-2">
                     {item.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-[17px] raleway text-gray-500 leading-relaxed">
+                  <p className="text-[15px] md:text-[17px] raleway text-gray-500 leading-relaxed">
                     {item.desc}
                   </p>
 
@@ -93,7 +93,7 @@ const ValuesAndTeam = () => {
           
    <ReusableTitle title="Meet Our Team" />
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 mt-4 md:mt-0">
             {team.map((member, index) => (
               <div
                 key={index}
@@ -111,7 +111,7 @@ const ValuesAndTeam = () => {
                 </h3>
 
                 {/* Role */}
-                <p className="text-[17px] font-semibold raleway text-[#4F39F6] mb-2">
+                <p className="text-[15px] md:text-[17px] font-semibold raleway text-[#4F39F6] mb-2">
                   {member.role}
                 </p>
 

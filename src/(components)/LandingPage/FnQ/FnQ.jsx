@@ -69,7 +69,7 @@ function FnQ() {
   };
 
   return (
-    <section className="bg-[#f3f3f3] py-16 px-6">
+    <section className="bg-white md:py-16 py-0 md:px-6 px-4">
       <div className="max-w-3xl mx-auto">
         
         {/* Header */}
@@ -87,6 +87,7 @@ function FnQ() {
           ))}
         </div>
       </div>
+      
     </section>
   );
 }

@@ -9,7 +9,7 @@ import SupportCTA from './_components/SupportCTA'
 const NavFnqPage = () => {
   return (
     <div className='bg-[#FFFFFF]'>
-        <div className='mx-20 space-y-10'>
+        <div className='md:mx-20 mx-4 space-y-10'>
             <ReusableTitle title="Frequently Asked Questions" description="Choose your neighborhood. Choose your story." />
         <HowitWorks />
         <TechQuestions />

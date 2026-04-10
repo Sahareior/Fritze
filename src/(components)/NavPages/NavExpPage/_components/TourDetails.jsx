@@ -12,7 +12,7 @@ const TourDetails = () => {
   return (
     <>
     <TourHero />
-     <div className='mx-20 space-y-10'>
+     <div className='md:mx-20 mx-4 space-y-10 md:space-y-16 mt-6 md:mt-0'>
      <ExperienceIntro />
   
      

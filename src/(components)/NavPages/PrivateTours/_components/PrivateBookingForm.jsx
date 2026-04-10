@@ -20,9 +20,9 @@ const Input = ({ label, placeholder, type = "text" }) => {
 
 const PrivateBookingForm = () => {
   return (
-    <section className="pb-16">
+    <section className="pb-16 mt-4 md:mt-0">
       
-      <div className="max-w-2xl mx-auto px-6 text-center">
+      <div className="max-w-2xl mx-auto px-4 md:px-6 text-center">
         
         {/* Header */}
 <ReusableTitle
@@ -31,15 +31,15 @@ description="We’ll confirm availability and send you all the details"
 />
 
         {/* Form Card */}
-        <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 text-left">
+        <div className="bg-white rounded-xl md:rounded-2xl border border-gray-200 shadow-sm p-4 md:p-8 text-left">
           
-          <form className="space-y-5">
+          <form className="space-y-4 md:space-y-5">
             
             {/* Select Tour */}
             <Input label="Select Tour *" placeholder="Choose a tour" />
 
             {/* Date + Guests */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Input label="Preferred Date *" type="date" />
               <Input label="Number of Guests *" placeholder="Enter number" />
             </div>
@@ -48,7 +48,7 @@ description="We’ll confirm availability and send you all the details"
             <Input label="Your Name *" placeholder="Enter your full name" />
 
             {/* Email + Phone */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <Input label="Email *" placeholder="your@email.com" />
               <Input label="Phone" placeholder="(555) 123-4567" />
             </div>

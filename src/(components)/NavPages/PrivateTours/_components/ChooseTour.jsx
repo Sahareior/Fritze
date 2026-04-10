@@ -35,9 +35,10 @@ const tours = [
 
 const ChooseTour = () => {
   return (
-    <section className="mx-20">
+<div className="bg-[#F8F9FA]">
+      <section className="md:mx-20  mx-4">
       
-      <div className="max-w-8xl mx-auto px-6 py-6">
+      <div className="max-w-8xl mx-auto  px-0 md:px-6 py-6">
         
         {/* Header */}
         <ReusableTitle 
@@ -46,29 +47,29 @@ const ChooseTour = () => {
         />
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {tours.map((tour, index) => (
             <div
               key={index}
-              className="bg-white border-2 border-[#E5E5E5] rounded-xl p-6 hover:shadow-md transition"
+              className="bg-white border-2 border-[#E5E5E5] rounded-xl p-5 md:p-6 hover:shadow-md transition"
             >
               
               {/* Title */}
-              <h3 className="lora text-[24px] font-semibold text-[#2A3C48] mb-2">
+              <h3 className="lora text-[20px] md:text-[24px] font-semibold text-[#2A3C48] mb-1 md:mb-2">
                 {tour.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[16px] raleway text-[#8E98A8] mb-4">
+              <p className="text-[15px] md:text-[16px] raleway text-[#8E98A8] mb-4">
                 {tour.desc}
               </p>
 
               {/* Meta Info */}
-              <div className="flex raleway text-[14px] items-center gap-6  text-gray-500 mb-4">
-                <span className="flex items-center gap-2">
+              <div className="flex flex-wrap md:flex-nowrap raleway text-[13px] md:text-[14px] items-center gap-4 md:gap-6 text-gray-500 mb-4">
+                <span className="flex items-center gap-1 md:gap-2">
                   <FaClock /> {tour.duration}
                 </span>
-                <span className="flex items-center gap-2">
+                <span className="flex items-center gap-1 md:gap-2">
                   <FaUsers /> {tour.guests}
                 </span>
               </div>
@@ -77,7 +78,7 @@ const ChooseTour = () => {
               <div className="border-t border-[#E5E5E5] mb-4"></div>
 
               {/* Price */}
-              <p className="text-orange-500 font-semibold raleway text-[16px]">
+              <p className="text-orange-500 font-semibold raleway text-[15px] md:text-[16px]">
                 Starting at {tour.price}
               </p>
 
@@ -93,6 +94,7 @@ const ChooseTour = () => {
       </div>
 
     </section>
+</div>
   );
 };
 

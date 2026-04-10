@@ -10,12 +10,12 @@ const CTA = () => {
       </p>
 
       {/* Title */}
-      <h3 className="lora text-[48px] font-semibold text-[#2A3C48] mb-2">
+      <h3 className="lora text-[32px] md:text-[48px] font-semibold text-[#2A3C48] mb-2 leading-tight">
         Ready to step inside the story?
       </h3>
 
       {/* Subtitle */}
-      <p className="text-[20px] raleway font-medium text-gray-500 mb-6">
+      <p className="text-[16px] md:text-[20px] raleway font-medium text-gray-500 mb-6 px-4 md:px-0">
         Join us for an unforgettable journey through Little Havana.
       </p>
 

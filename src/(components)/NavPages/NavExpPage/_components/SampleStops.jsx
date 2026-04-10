@@ -24,10 +24,10 @@ const SampleStops = () => {
       
       {/* Header */}
       <div className="mb-6">
-        <h3 className="font-serif text-[42px] font-semibold lora text-gray-800">
+        <h3 className="font-serif text-[28px] md:text-[42px] font-semibold lora text-gray-800">
           Sample Stops
         </h3>
-        <p className="text-[16px] raleway  text-gray-400 mt-3">
+        <p className="text-[15px] md:text-[16px] raleway  text-gray-400 mt-2 md:mt-3">
           Note: Actual stops may vary based on availability and local events
         </p>
       </div>
@@ -37,34 +37,34 @@ const SampleStops = () => {
         {stops.map((stop, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row gap-4 rounded-l-xl rounded-r-xl shadow-md items-stretch"
+            className="flex flex-col md:flex-row gap-0 md:gap-4 rounded-xl shadow-md items-stretch bg-white"
           >
             
             {/* IMAGE */}
             <img
               src={stop.img}
               alt={stop.title}
-              className="w-full md:w-[360px] rounded-l-xl h-[250px] object-cover "
+              className="w-full md:w-[360px] rounded-t-xl md:rounded-l-xl md:rounded-tr-none h-[200px] md:h-[250px] object-cover "
             />
 
             {/* CONTENT CARD */}
-            <div className="flex-1 bg-white  p-5 flex flex-col justify-center">
+            <div className="flex-1 p-5 lg:p-6 flex flex-col justify-center rounded-b-xl md:rounded-r-xl md:rounded-bl-none">
               
               {/* Title Row */}
-              <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-3 mb-2 md:mb-3">
                 
                 {/* Step Number */}
-                <span className="w-6 h-6 flex items-center justify-center text-xs bg-orange-500 text-white rounded-full">
+                <span className="min-w-6 w-6 h-6 flex items-center justify-center text-xs bg-orange-500 text-white rounded-full">
                   {index + 1}
                 </span>
 
-                <h4 className="lora text-[26px] font-semibold text-gray-800">
+                <h4 className="lora text-[20px] md:text-[26px] font-semibold text-gray-800">
                   {stop.title}
                 </h4>
               </div>
 
               {/* Description */}
-              <p className="text-[17px] raleway text-gray-600 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] raleway text-gray-600 leading-relaxed">
                 {stop.desc}
               </p>
             </div>

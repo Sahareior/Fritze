@@ -72,7 +72,7 @@ const TourFnQ = () => {
     <section className="">
       
       {/* Title */}
-      <h3 className="lora text-[42px] font-semibold text-[#2A3C48] mb-6">
+      <h3 className="lora text-[28px] md:text-[42px] font-semibold text-[#2A3C48] mb-4 md:mb-6">
         Frequently Asked Questions
       </h3>
 

@@ -23,11 +23,11 @@ const WhyPrivate = () => {
 ];
   return (
 <div className=' bg-[#F8F9FA]'>
-        <div className='mx-20 pb-16'>
+        <div className='md:mx-20 mx-4 pb-16 pt-4 md:pt-0'>
         <ReusableTitle
         title="Why Choose Private Tours?"
         />
-        <div className="grid md:grid-cols-3 px-12 gap-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:px-12 gap-4 mt-2 md:mt-10">
         {features.map((item, index) => (
           <WhyWorksCard hide={true} key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} />
         ))}

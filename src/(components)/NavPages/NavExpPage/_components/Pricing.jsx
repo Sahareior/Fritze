@@ -40,12 +40,12 @@ const Pricing = () => {
     <section>
       
       {/* Title */}
-      <h3 className="lora text-[42px] font-semibold text-[#2A3C48] mb-2">
+      <h3 className="lora text-[28px] md:text-[42px] font-semibold text-[#2A3C48] mb-4 md:mb-6">
         Pricing Tiers
       </h3>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
         {plans.map((plan, index) => {
           const isHighlight = plan.type === "highlight";
           const isDark = plan.type === "dark";
@@ -53,7 +53,7 @@ const Pricing = () => {
           return (
             <div
               key={index}
-              className={`relative rounded-xl p-6 transition ${
+              className={`relative rounded-xl p-5 md:p-6 transition ${
                 isDark
                   ? "bg-[#3f4a3c] text-white"
                   : "bg-white border"
@@ -62,26 +62,26 @@ const Pricing = () => {
               
               {/* Popular Badge */}
               {isHighlight && (
-                <span className="absolute top-3 right-3 bg-orange-500 text-white text-xs px-2 py-1 rounded-full">
+                <span className="absolute top-3 right-3 bg-orange-500 text-white text-[10px] md:text-xs px-2 py-1 rounded-full font-semibold">
                   POPULAR
                 </span>
               )}
 
               {/* Title */}
-              <h4 className="lora text-[28px] font-semibold mb-2">
+              <h4 className="lora text-[24px] md:text-[28px] font-semibold mb-2">
                 {plan.name}
               </h4>
 
               {/* Price */}
-              <div className="flex items-end gap-1 mb-4">
-                <span className="text-[48px] lora font-bold text-orange-500">
+              <div className="flex items-end gap-1 mb-4 md:mb-6">
+                <span className="text-[40px] md:text-[48px] lora font-bold text-orange-500 leading-none">
                   {plan.price}
                 </span>
-                <span className="text-sm opacity-70">/ person</span>
+                <span className="text-xs md:text-sm opacity-70 pb-1">/ person</span>
               </div>
 
               {/* Features */}
-              <ul className="space-y-2 text-sm mb-6">
+              <ul className="space-y-3 md:space-y-2 text-[14px] md:text-sm mb-6">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-orange-500 mt-1">✔</span>
@@ -94,7 +94,7 @@ const Pricing = () => {
 
               {/* Button */}
               <button
-                className={`w-full py-2 rounded-md text-sm transition ${
+                className={`w-full py-3 md:py-2 mt-auto rounded-md text-[15px] md:text-sm font-medium transition ${
                   isDark
                     ? "bg-white text-gray-800"
                     : isHighlight

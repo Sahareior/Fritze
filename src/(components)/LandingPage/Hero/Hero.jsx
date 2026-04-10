@@ -12,13 +12,13 @@ function Hero() {
   return (
   <section>
       <div className=" md:px-20 py-10">
-      <div className="w-full mx-auto">
+      <div className="w-full md:px-0 px-4 mx-auto">
         {/* Top Content */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           
           {/* LEFT */}
           <div>
-            <h1 className="text-6xl lora font-medium leading-tight text-gray-800 ">
+            <h1 className="md:text-6xl text-4xl lora md:font-medium leading- text-gray-800 ">
               Experience <br />
               Miami From the <br />
               Inside
@@ -26,16 +26,16 @@ function Hero() {
 
    
 
-            <div className="mt-6 flex flex-col gap-1">
+            <div className="md:mt-6 mt-2 flex flex-col gap-1">
                        <p className="mt-4 text-gray-500 max-w-md">
               Story-driven cultural tours blending cuisine, motion, and immersive moments.
             </p>
-<div className="flex gap-4 mt-1">
-                <button className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600 transition">
+<div className="flex md:flex-row flex-col gap-4 mt-1">
+                <button className="bg-orange-500 text-white md:px-6 px-2 py-3 rounded-md font-medium hover:bg-orange-600 transition">
                 Check Availability
               </button>
 
-              <button className="border border-[#2A3C48] px-6 py-3 rounded-md text-gray-700 hover:bg-gray-100 transition">
+              <button className="border border-[#2A3C48] md:px-6 px-2 py-3 rounded-md text-gray-700 hover:bg-gray-100 transition">
                 Explore Experiences
               </button>
 </div>
@@ -63,11 +63,11 @@ function Hero() {
      
       </div>
     </div>
-       <div className="mt-10 bg-[#F2F2F2] rounded-md  px-18 py-4 flex flex-wrap justify-between gap-4">
+       <div className="mt-10 bg-[#F2F2F2] rounded-md  px-18 py-4 grid md:grid-cols-4 grid-cols-2  gap-4">
           {features.map((item, index) => (
-            <div key={index} className="flex mx-11 items-center gap-2 text-gray-600 text-sm">
+            <div key={index} className="flex md:mx-11 mx-4 items-center gap-2 text-gray-600 text-sm">
               <span className="text-orange-500">{item.icon}</span>
-              <span className="lora text-[18px]">{item.text}</span>
+              <span className="lora md:text-[18px] text-[14px]">{item.text}</span>
             </div>
           ))}
         </div>

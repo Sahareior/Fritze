@@ -161,8 +161,8 @@ const PressvideoGallary = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* HEADER */}
-      <section className="bg-gray-50/50 py-16">
-        <div className="max-w-8xl mx-auto px-20">
+      <section className="bg-gray-50/50 py-12 md:py-16 mt-[60px] md:mt-0">
+        <div className="max-w-8xl mx-auto px-4 md:px-20">
           <Link
             to="/press"
             className="flex items-center gap-2 text-orange-500 font-medium raleway text-sm mb-6 hover:underline"
@@ -170,11 +170,11 @@ const PressvideoGallary = () => {
             <FaArrowLeft size={12} /> Back to Press & Media
           </Link>
 
-          <h1 className="lora text-[48px] font-semibold text-[#2A3C48] mb-4">
+          <h1 className="lora text-[32px] md:text-[48px] font-semibold text-[#2A3C48] mb-4">
             Video Content Library
           </h1>
 
-          <p className="raleway text-[18px] text-gray-500 max-w-3xl leading-relaxed">
+          <p className="raleway text-[16px] md:text-[18px] text-gray-500 max-w-3xl leading-relaxed">
             B-roll footage, tour highlights, testimonials, and interviews
             available for media use with proper attribution.
           </p>
@@ -182,8 +182,8 @@ const PressvideoGallary = () => {
       </section>
 
       {/* FILTERS */}
-      <section className="py-10">
-        <div className="max-w-8xl mx-auto px-20">
+      <section className="py-6 md:py-10">
+        <div className="max-w-8xl mx-auto px-4 md:px-20">
           <div className="flex flex-wrap gap-4">
             {categories.map((cat) => (
               <button
@@ -206,8 +206,8 @@ const PressvideoGallary = () => {
       </section>
 
       {/* GRID */}
-      <section className="pb-20">
-        <div className="max-w-8xl mx-auto px-20">
+      <section className="pb-12 md:pb-20">
+        <div className="max-w-8xl mx-auto px-4 md:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVideos.map((video, index) => (
               <div

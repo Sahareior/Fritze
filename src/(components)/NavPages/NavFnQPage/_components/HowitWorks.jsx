@@ -25,14 +25,14 @@ const HowItWorks = () => {
   return (
     <section className=" ">
       
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto md:px-6  text-center">
         
         {/* Header */}
-        <h2 className="lora text-[42px] font-semibold text-[#2A3C48] mb-2">
+        <h2 className="lora md:text-[42px] text-[22px] font-semibold text-[#2A3C48] mb-2">
           How It Works
         </h2>
 
-        <p className="text-[20px] font-medium  raleway text-[#8E98A8] mb-10">
+        <p className="md:text-[20px] text-[12px] font-medium  raleway text-[#8E98A8] mb-10">
           Technology in service of story.
         </p>
 

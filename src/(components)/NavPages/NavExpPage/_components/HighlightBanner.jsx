@@ -13,14 +13,14 @@ const HighlightBanner = () => {
 
         {/* Title */}
         <h3
-          className="font-serif lora text-[28px] font-semibold 
-         mb-2"
+          className="font-serif lora text-[22px] md:text-[28px] font-semibold 
+         mb-2 leading-tight"
         >
           No app. No login. Works on any smartphone.
         </h3>
 
         {/* Subtitle */}
-        <p className="text-sm raleway text-[16px] font-medium text-gray-300">
+        <p className="text-sm raleway text-[15px] md:text-[16px] font-medium text-gray-300 px-2 md:px-0">
           Technology should enhance the story, not complicate it.
         </p>
       </div>

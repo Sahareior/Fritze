@@ -52,9 +52,9 @@ const steps = [
 const StepsShowcase = () => {
   return (
 <div className="bg-[#f3f3f3]">
-      <section className="px-10 py-16">
+      <section className="px-4 md:px-10 py-12 md:py-16">
       
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 ">
+      <div className="max-w-7xl mx-auto  md:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 ">
         
         {steps.map((item, index) => {
           const Icon = item.icon;
@@ -62,38 +62,38 @@ const StepsShowcase = () => {
           return (
             <div
               key={index}
-              className={`${item.color} rounded-2xl p-6 shadow-sm pb-10 flex flex-col`}
+              className={`${item.color} rounded-2xl p-5 md:p-6 shadow-sm pb-8 md:pb-10 flex flex-col`}
             >
               
               {/* Icon */}
               <div className="flex justify-center mb-4">
                 <div
-                  className={`w-24 h-24 rounded-full flex items-center justify-center ${item.iconBg}`}
+                  className={`w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center ${item.iconBg}`}
                 >
                   <Icon size={40} className="text-white text-lg" />
                 </div> 
               </div>
 
               {/* Step */}
-              <p className="text-[18px] raleway font-bold text-center text-orange-500 mb-1">
+              <p className="text-[15px] md:text-[18px] raleway font-bold text-center text-orange-500 mb-1">
                 {item.step}
               </p>
 
               {/* Title */}
-              <h3 className="text-center text-[32px] font-semibold text-gray-800 mb-2">
+              <h3 className="text-center text-[26px] md:text-[32px] font-semibold text-gray-800 mb-2">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[17px] raleway text-gray-600 text-center mb-4">
+              <p className="text-[16px] md:text-[17px] raleway text-gray-600 text-center mb-4">
                 {item.desc}
               </p>
 
               {/* Features Box */}
-              <div className="bg-white rounded-lg p-4 mb-4 space-y-2">
+              <div className="bg-white rounded-lg p-3 md:p-4 mb-4 space-y-2">
                 {item.features.map((f, i) => (
-                  <div key={i} className="flex items-center gap-2 text-[17px] text-gray-600">
-                    <FaCheck className="text-orange-500 text-xs" />
+                  <div key={i} className="flex items-center gap-2 text-[15px] md:text-[17px] text-gray-600">
+                    <FaCheck className="text-orange-500 text-xs min-w-[12px]" />
                     {f}
                   </div>
                 ))}

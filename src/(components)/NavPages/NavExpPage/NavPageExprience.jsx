@@ -7,7 +7,7 @@ const filters = ["Neighborhood", "Format", "Tier", "Duration"];
 const ReusableSelect = ({ title }) => {
   return (
     <div className="w-full">
-      <label className="text-xs text-gray-500">{title}</label>
+      <label className="text-sm raleway font-semibold text-gray-500">{title}</label>
 
       <div className="relative mt-1">
         <select className="w-full px-4 py-3 rounded-md bg-white border border-gray-200 text-sm appearance-none outline-none">
@@ -65,9 +65,9 @@ const NavPageExprience = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="max-w-8xl mx-auto px-20 py-10">
+      <div className="max-w-8xl mx-auto md:px-20 px-4 py-10">
         {/* FILTERS */}
-        <div className="grid md:grid-cols-4 gap-4 mb-10">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-4 mb-10">
           {filters?.map((item, index) => (
             <ReusableSelect key={index} title={item} />
           ))}
@@ -76,7 +76,7 @@ const NavPageExprience = () => {
         {/* CARDS */}
         <div className="grid md:grid-cols-3 gap-6">
           {experiences?.map((item, index) => (
-            <ReusableCardHome key={index} item={item} />
+            <ReusableCardHome from="experience" key={index} item={item} />
           ))}
         </div>
       </div>

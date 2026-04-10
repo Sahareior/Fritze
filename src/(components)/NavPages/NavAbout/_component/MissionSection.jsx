@@ -12,7 +12,7 @@ const MissionSection = () => {
   return (
     <section className="bg-[#f3f3f3] py-16">
       
-      <div className="max-w-8xl mx-auto px-20 grid md:grid-cols-2 gap-10 items-start">
+      <div className="max-w-8xl mx-auto px-4 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
         
         {/* LEFT CONTENT */}
         <div>
@@ -23,12 +23,12 @@ const MissionSection = () => {
           </div>
 
           {/* Title */}
-          <h2 className="lora font-bold text-[36px] text-gray-800 mb-4">
+          <h2 className="lora font-bold text-[28px] md:text-[36px] text-gray-800 mb-4">
             Our Mission
           </h2>
 
           {/* Paragraphs */}
-          <div className="space-y-4 text-[17px] font-medium raleway text-gray-600 leading-relaxed">
+          <div className="space-y-4 text-[15px] md:text-[17px] font-medium raleway text-gray-600 leading-relaxed">
             <p>
               Traditional city tours are broken. They're rushed, inflexible, and often boring. We created CineWalk to fix that.
             </p>
@@ -45,17 +45,17 @@ const MissionSection = () => {
         </div>
 
         {/* RIGHT STATS CARD */}
-        <div className="bg-white rounded-2xl shadow-md p-6">
+        <div className="bg-white rounded-2xl shadow-md p-6 mt-4 md:mt-0">
           
           <div className="space-y-6">
             {stats.map((item, index) => (
               <div key={index}>
                 
-                <h3 className="text-[36px] font-bold  text-gray-800">
+                <h3 className="text-[32px] md:text-[36px] font-bold  text-gray-800 leading-tight">
                   {item.value}
                 </h3>
 
-                <p className="text-[17px] font-medium raleway text-gray-500">
+                <p className="text-[15px] md:text-[17px] font-medium raleway text-gray-500 mt-1 md:mt-0">
                   {item.label}
                 </p>
 

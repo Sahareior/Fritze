@@ -14,12 +14,39 @@ import NavPress from "./(components)/NavPages/NavPress/NavPress.jsx";
 import PressphotoGallary from "./(components)/NavPages/NavPress/pages/PressphotoGallary.jsx";
 import PressvideoGallary from "./(components)/NavPages/NavPress/pages/PressvideoGallary.jsx";
 import PrivateGroupsPage from "./(components)/NavPages/privateGrpups/PrivateGroupsPage.jsx";
+import DashboardLayout from "./(components)/dashboard/DashboardLayout.jsx";
+import MyBookings from "./(components)/dashboard/user/MyBookings/MyBookings.jsx";
+import ActiveTours from "./(components)/dashboard/user/ActiveTours/ActiveTours.jsx";
+import MemoryVault from "./(components)/dashboard/user/MemoryVault/MemoryVault.jsx";
+import UserSettings from "./(components)/dashboard/user/Settings/UserSettings.jsx";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "user/my-bookings",
+        element: <MyBookings />,
+      },
+      {
+        path: "user/active-tours",
+        element: <ActiveTours />,
+      },
+      {
+        path: "user/memory-vault",
+        element: <MemoryVault />,
+      },
+      {
+        path: "user/settings",
+        element: <UserSettings />,
+      },
+    ],
   },
   {
     path: "/",

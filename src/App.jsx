@@ -10,6 +10,7 @@ import WhyWorksCard from './(components)/LandingPage/HomepageReusableComponents/
 import FnQ from './(components)/LandingPage/FnQ/FnQ'
 import ContactPage from './(components)/LandingPage/ContactPage/ContactPage'
 import Navbar from './(components)/LandingPage/Navbar/Navbar'
+import ReusableCarousel from './(components)/LandingPage/HomepageReusableComponents/ReusableCarousel'
 
 function App() {
 
@@ -42,9 +43,9 @@ const features = [
 <Hero />
 <Experience />
 
-<div className='bg-[#F3F3F3] pb-14'>
+<div className='bg-[#F3F3F3] md:pb-14 pb-6'>
   <ReusableTitle title="Why Miami Immersive"/>
-  <div className="grid md:grid-cols-4 mx-20 gap-6">
+  <div className="grid md:grid-cols-4 grid-cols-2 md:mx-20 mx-4 gap-6">
     {features.map((item, index) => (
       <WhyWorksCard key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} />
     ))}
@@ -53,13 +54,14 @@ const features = [
 
 <div className='bg-white '>
   <ReusableTitle title="How It Works" description="Four simple steps to an unforgettable experience." />
-  <div className="grid md:grid-cols-4 mx-20 gap-6">
+  <div className="grid md:grid-cols-4 grid-cols-2 md:mx-20 mx-4 gap-6">
     {features.map((item, index) => (
       <WhyWorksCard hide={true} key={index} icon={item.icon} title={item.title} subtitle={item.subtitle} />
     ))}
   </div>
 </div>
 
+<ReusableCarousel />
 <FnQ />
 <ContactPage />
     </>

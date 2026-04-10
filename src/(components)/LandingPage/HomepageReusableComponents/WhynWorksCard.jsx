@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyWorksCard = ({ icon, title, subtitle,hide }) => {
   return (
-    <div className={`bg-white rounded-xl  py-8 text-center  ${hide ? '' : 'shadow-sm'} hover:shadow-md transition w-full`}>
+    <div className={`bg-white rounded-xl  md:py-8 py-4 text-center  ${hide ? '' : 'shadow-sm'} hover:shadow-md transition w-full`}>
       
       {/* Icon */}
       <div className="text-orange-500 text-2xl mb-3">

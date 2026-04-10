@@ -35,9 +35,9 @@ const cards = [
 
 const AccessibilitySection = () => {
   return (
-    <section className="bg-[#f3f3f3] py-16">
+    <section className="bg-[#f3f3f3] py-12 md:py-16">
       
-      <div className="w-full px-20 text-center">
+      <div className="w-full px-4 md:px-20 text-center">
         
         {/* Icon */}
         <div className="flex justify-center mb-4">
@@ -50,14 +50,14 @@ const AccessibilitySection = () => {
         />
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-left mt-6 md:mt-10">
           {cards.map((card, index) => {
             const Icon = card.icon;
 
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition"
+                className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 hover:shadow-md transition"
               >
                 
                 {/* Icon */}
@@ -68,7 +68,7 @@ const AccessibilitySection = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="lora text-[20px] font-semibold text-gray-800 mb-3">
+                <h3 className="lora text-[18px] md:text-[20px] font-semibold text-gray-800 mb-3">
                   {card.title}
                 </h3>
 
@@ -95,17 +95,17 @@ const AccessibilitySection = () => {
         </div>
 
         {/* CTA Banner */}
-        <div className="mt-12 bg-[#2f3e46] text-white rounded-2xl py-10 px-6">
+        <div className="mt-8 md:mt-12 bg-[#2f3e46] text-white rounded-2xl py-8 md:py-10 px-4 md:px-6">
           
-          <h3 className="lora text-[26px] font-semibold text-white mb-3">
+          <h3 className="lora text-[22px] md:text-[26px] font-semibold text-white mb-2 md:mb-3">
             Have specific accessibility needs?
           </h3>
 
-          <p className="raleway text-[18px] text-gray-300 mb-6 mx-auto">
+          <p className="raleway text-[16px] md:text-[18px] text-gray-300 mb-6 mx-auto">
             Contact us before booking and we’ll work with you to ensure the best possible experience.
           </p>
 
-          <button className="bg-orange-500 text-white px-8 py-3 rounded-md hover:bg-orange-600 transition">
+          <button className="bg-orange-500 text-white px-6 md:px-8 py-3 rounded-md hover:bg-orange-600 transition w-full md:w-auto font-medium">
             Explore Experiences
           </button>
 

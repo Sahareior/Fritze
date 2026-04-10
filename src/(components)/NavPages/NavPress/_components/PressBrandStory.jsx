@@ -16,18 +16,18 @@ const PressBrandStory = () => {
   return (
     <section className="bg-white py-16">
       
-      <div className="max-w-8xl mx-auto px-20 grid md:grid-cols-2 gap-10">
+      <div className="max-w-8xl mx-auto px-4 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         
         {/* ================= LEFT ================= */}
         <div>
           
           {/* Title */}
-          <h2 className="lora font-semibold text-[36px] text-gray-800 mb-6">
+          <h2 className="lora font-semibold text-[28px] md:text-[36px] text-gray-800 mb-4 md:mb-6">
             Brand Story
           </h2>
 
           {/* Content */}
-          <div className="space-y-5 text-[17px] raleway text-gray-600 leading-relaxed">
+          <div className="space-y-4 md:space-y-5 text-[15px] md:text-[17px] raleway text-gray-600 leading-relaxed">
             <p> 
               We’re reimagining cultural tourism in Miami—one story, one taste, one neighborhood at a time. Our small-group tours blend curated local experiences with optional immersive technology, creating deeper connections between visitors and the city’s rich cultural tapestry.
             </p>
@@ -47,17 +47,17 @@ const PressBrandStory = () => {
           </div>
 
           {/* ================= MEDIA KIT ================= */}
-          <div className="mt-10 bg-[#52583E] text-white rounded-2xl py-12 p-6">
+          <div className="mt-8 md:mt-10 bg-[#52583E] text-white rounded-2xl py-8 md:py-12 p-5 md:p-6">
             
-            <h3 className="lora text-[32px] font-semibold text-lg mb-2">
+            <h3 className="lora text-[26px] md:text-[32px] font-semibold text-lg mb-2">
               Media Kit
             </h3>
 
-            <p className="text-[16px] raleway  text-gray-200 mb-5">
+            <p className="text-[15px] md:text-[16px] raleway  text-gray-200 mb-5">
               Complete press materials including logos, brand guidelines, high-resolution images, and fact sheets.
             </p>
 
-            <button className="bg-white text-[#52583E] font-semibold raleway px-6 py-3 rounded-md flex items-center gap-2 hover:shadow-md transition">
+            <button className="bg-white text-[#52583E] font-semibold raleway w-full justify-center md:justify-start md:w-auto px-6 py-3 rounded-md flex items-center gap-2 hover:shadow-md transition">
               <FaDownload />
               Download Media Kit (PDF)
             </button>
@@ -67,21 +67,21 @@ const PressBrandStory = () => {
         </div>
 
         {/* ================= RIGHT ================= */}
-        <div className="bg-[#F2F2F2] rounded-2xl shadow-md p-6">
+        <div className="bg-[#F2F2F2] rounded-2xl shadow-md p-5 md:p-6 mt-6 md:mt-0">
           
-          <h3 className="lora text-[24px] font-semibold text-lg text-gray-800 mb-4">
+          <h3 className="lora text-[22px] md:text-[24px] font-semibold text-gray-800 mb-4">
             Fast Facts
           </h3>
 
           <div className="space-y-4">
             {facts.map((item, index) => (
-              <div key={index}>
+               <div key={index}>
                 
                 <p className="text-[12px] raleway text-gray-400">
                   {item.label}
                 </p>
 
-                <p className="text-[16px] raleway font-semibold text-gray-700 mb-2">
+                <p className="text-[15px] md:text-[16px] raleway font-semibold text-gray-700 mb-2">
                   {item.value}
                 </p>
 

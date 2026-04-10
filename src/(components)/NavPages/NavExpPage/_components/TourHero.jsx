@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 const TourHero = () => {
   return (
 <div>
-        <div className="relative h-[90vh]">
+        <div className="relative md:h-[90vh]">
       <img
         src="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?q=80&w=1200"
         className="w-full h-full object-cover"
@@ -14,14 +14,14 @@ const TourHero = () => {
 
       {/* Play Button */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[208px] h-[208px] bg-orange-500 rounded-full flex items-center justify-center text-white text-xl shadow-lg">
-          <FaPlay className="text-5xl" />
+        <div className="w-20 h-20 md:w-[208px] md:h-[208px] bg-orange-500 rounded-full flex items-center justify-center text-white text-xl shadow-lg">
+          <FaPlay className="text-3xl md:text-5xl" />
         </div>
       </div>
       
     </div>
-<div className="py-8 border-b border-[#E9E9E9]">
-        <p className="text-xs pl-20 text-orange-500 mb-2 underline cursor-pointer">
+<div className="py-4 md:py-8 border-b border-[#E9E9E9]">
+        <p className="text-xs pl-4 md:pl-20 text-orange-500 mb-2 underline cursor-pointer">
           What’s Included
         </p>
 </div>

@@ -47,7 +47,7 @@ function Experience() {
         </div>
 
         {/* Footer Link */}
-        <div className="text-right mt-6">
+        <div className="text-center md:text-right px mt-6">
           <button className="text-orange-500 text-sm hover:underline">
             View All Tours
           </button>

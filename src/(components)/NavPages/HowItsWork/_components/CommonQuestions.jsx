@@ -62,9 +62,9 @@ const CommonQuestions = () => {
   };
 
   return (
-    <section className="bg-[#f3f3f3] py-16">
+    <section className="bg-[#f3f3f3] py-12 md:py-16">
       
-      <div className="max-w-8xl mx-auto px-20 text-center">
+      <div className="max-w-8xl mx-auto px-4 md:px-20 text-center">
         
         {/* Header */}
         <ReusableTitle
@@ -73,7 +73,7 @@ const CommonQuestions = () => {
         />
 
         {/* FAQ List */}
-        <div className="space-y-4 mt-10 text-left">
+        <div className="space-y-4 mt-6 md:mt-10 text-left">
           {faqs.map((item, index) => (
             <FAQItem
               key={index}
@@ -85,8 +85,8 @@ const CommonQuestions = () => {
         </div>
 
         {/* Footer Link */}
-        <div className="mt-6">
-          <button className="text-[18px] raleway font-semibold text-orange-500 hover:underline">
+        <div className="mt-8 md:mt-6">
+          <button className="text-[16px] md:text-[18px] raleway font-semibold text-orange-500 hover:underline">
             View All FAQs →
           </button>
         </div>
