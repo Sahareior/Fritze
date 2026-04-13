@@ -10,3 +10,9 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
 }
+
+
+.ant-modal .ant-modal-container{
+  padding: 0px !important;
+  background-color: transparent !important;
+}

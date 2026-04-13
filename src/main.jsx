@@ -19,6 +19,24 @@ import MyBookings from "./(components)/dashboard/user/MyBookings/MyBookings.jsx"
 import ActiveTours from "./(components)/dashboard/user/ActiveTours/ActiveTours.jsx";
 import MemoryVault from "./(components)/dashboard/user/MemoryVault/MemoryVault.jsx";
 import UserSettings from "./(components)/dashboard/user/Settings/UserSettings.jsx";
+import GuideDashboard from "./(components)/dashboard/guide/GuideDashboard/GuideDashboard.jsx";
+import Tourmanegement from "./(components)/dashboard/guide/TourManagement/Tourmanegement.jsx";
+import GuideQrCode from "./(components)/dashboard/guide/TourManagement/_components/QuideQrCode.jsx";
+import CompleteSteps from "./(components)/dashboard/guide/TourManagement/_components/CompleteSteps.jsx";
+import Checkins from "./(components)/dashboard/guide/TourManagement/_components/Checkins.jsx";
+import GuideUploadPhotos from "./(components)/dashboard/guide/TourManagement/_components/GuideUploadPhotos.jsx";
+import GuidePhotoInfo from "./(components)/dashboard/guide/TourManagement/_components/GuidePhotoInfo.jsx";
+import UploadBulkPhotos from "./(components)/dashboard/guide/TourManagement/_components/UploadBulkPhotos.jsx";
+import AdminDashoard from "./(components)/dashboard/admin/AdminDashoard.jsx";
+import AdminTours from "./(components)/dashboard/admin/Tours/AdminTours.jsx";
+import TourCreate from "./(components)/dashboard/admin/Tours/_components/TourCreate/TourCreate.jsx";
+import Bookings from "./(components)/dashboard/admin/Bookings/Bookings.jsx";
+import AdminMedia from "./(components)/dashboard/admin/Admin_Media/AdminMedia.jsx";
+import Guide from "./(components)/dashboard/admin/Guide/Guide.jsx";
+import AdminCustomers from "./(components)/dashboard/admin/customers/AdminCustomers.jsx";
+import Content from "./(components)/dashboard/admin/Content/Content.jsx";
+import GuideProfile from "./(components)/dashboard/guide/Profile/GuideProfile.jsx";
+import CameraImageOverlay from "./(components)/dashboard/user/ActiveTours/_components/CameraImageOverlay.jsx";
 
 
 const router = createBrowserRouter([
@@ -31,12 +49,53 @@ const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
+        path: "guide/dashboard",
+        element: <GuideDashboard />,
+      },
+      {
+        path: "guide/tour-management",
+        element: <Tourmanegement />,
+      },
+      {
+        path: "guide/qr-code",
+        element: <GuideQrCode />,
+      },
+      {
+        path: "guide/complete-steps",
+        element: <CompleteSteps />,
+      },
+      {
+        path: "guide/checkins",
+        element: <Checkins />,
+      },
+      {
+        path: "guide/upload-photos",
+        element: <GuideUploadPhotos />,
+      },
+      {
+        path: "guide/photo-info",
+        element: <GuidePhotoInfo />,
+      },
+      {
+        path: "guide/upload-bulk-photos",
+        element: <UploadBulkPhotos />,
+      },
+      {
+        path: "guide/profile",
+        element: <GuideProfile />,
+      },
+      {
         path: "user/my-bookings",
         element: <MyBookings />,
       },
       {
         path: "user/active-tours",
         element: <ActiveTours />,
+
+      },
+      {
+        path:'user/cameraOverlay',
+        element:<CameraImageOverlay />
       },
       {
         path: "user/memory-vault",
@@ -46,6 +105,40 @@ const router = createBrowserRouter([
         path: "user/settings",
         element: <UserSettings />,
       },
+      {
+        path:'admin-overview',
+        element:<AdminDashoard />
+      },
+      {
+        path:'admin-tours',
+        element: <AdminTours />,
+        children:[
+          {
+            path:'create',
+            element:<TourCreate />
+          }
+        ]
+      },
+      {
+        path: 'admin-bookings',
+        element: <Bookings />,
+      },
+      {
+        path: 'admin-media',
+        element: <AdminMedia />,
+      },
+      {
+        path: 'admin-guide',
+        element: <Guide />,
+      },
+      {
+        path: 'admin-customers',
+        element: <AdminCustomers />,
+      },
+      {
+        path: 'admin-content',
+        element: <Content />,
+      }
     ],
   },
   {
@@ -91,7 +184,8 @@ const router = createBrowserRouter([
       {
         path: "/private-groups",
         element: <PrivateGroupsPage />,
-      }
+      },
+
     ],
   },
 ]);
