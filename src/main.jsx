@@ -37,6 +37,10 @@ import AdminCustomers from "./(components)/dashboard/admin/customers/AdminCustom
 import Content from "./(components)/dashboard/admin/Content/Content.jsx";
 import GuideProfile from "./(components)/dashboard/guide/Profile/GuideProfile.jsx";
 import CameraImageOverlay from "./(components)/dashboard/user/ActiveTours/_components/CameraImageOverlay.jsx";
+import AudioPage from "./(components)/dashboard/user/ActiveTours/_components/conditionalPages/AudioPage.jsx";
+import VideoPage from "./(components)/dashboard/user/ActiveTours/_components/conditionalPages/VideoPage.jsx";
+import ImagePage from "./(components)/dashboard/user/ActiveTours/_components/conditionalPages/ImagePage.jsx";
+import UsersImageUpload from "./(components)/dashboard/user/ActiveTours/_components/UsersImageUpload.jsx";
 
 
 const router = createBrowserRouter([
@@ -92,6 +96,22 @@ const router = createBrowserRouter([
         path: "user/active-tours",
         element: <ActiveTours />,
 
+      },
+      {
+        path:'user/active-tours/audio',
+        element:<AudioPage />
+      },
+      {
+        path:'user/active-tours/video',
+        element:<VideoPage />
+      },
+      {
+        path:'user/active-tours/image',
+        element:<ImagePage />
+      },
+      {
+        path:'user/active-tours/image-upload',
+        element:<UsersImageUpload />
       },
       {
         path:'user/cameraOverlay',

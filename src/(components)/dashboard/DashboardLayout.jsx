@@ -70,11 +70,10 @@ const DashboardLayout = () => {
       </Sider>
       <Layout>
         {/* <Header style={{ padding: 0, background: colorBgContainer }} /> */}
-        <Content className="overflow-y-auto">
+        <Content className="overflow-y-auto h-full">
           <div
             style={{
-              minHeight: 360,
-            
+              height: '100%',
               borderRadius: borderRadiusLG,
             }}
           >
